@@ -16,8 +16,8 @@ let backyellow2 = document.querySelector('.back2')
 
 
 //счетчик
-let score = 0
-let progress = 1
+let score = 0.00
+let progress = 0.025
 
 
 click.addEventListener('click', function(){
@@ -27,13 +27,13 @@ click.addEventListener('click', function(){
 });
 
 x2.addEventListener('click', function(){
-	if (score >= '100') {
-		progress = 2
-		score = score - '100'
+	if (score >= '20.00') {
+		progress = 0.055
+		score = score - '20.00'
 		num.textContent = score
 		x2.parentNode.removeChild(x2);
 	}else {
-		alert('недостаточно средств! (нужно 100 для улучшения)')
+		alert('недостаточно средств! (нужно 20.00 для улучшения)')
 	}
 	
 });
@@ -42,38 +42,38 @@ x2.addEventListener('click', function(){
 
 
 x3.addEventListener('click', function(){
-		if (score >= '150') {
-		progress = 3
-		score = score - '150'
+		if (score >= '60.00') {
+		progress = 0.080
+		score = score - '60.00'
 		num.textContent = score
 		x3.parentNode.removeChild(x3);
 	}else {
-		alert('недостаточно средств! (нужно 150 для улучшения)')
+		alert('недостаточно средств! (нужно 60.00 для улучшения)')
 	}
 	
 });
 
 
 x4.addEventListener('click', function(){
-		if (score >= '300') {
-		progress = 4
-		score = score - '300'
+		if (score >= '100.00') {
+		progress = 0.55
+		score = score - '100.00'
 		num.textContent = score
 		x4.parentNode.removeChild(x4);
 	}else {
-		alert('недостаточно средств! (нужно 300 для улучшения)')
+		alert('недостаточно средств! (нужно 100.00 для улучшения)')
 	}
 	
 });
 
 x5.addEventListener('click', function(){
-		if (score >= '600') {
-		progress = 5
-		score = score - '600'
+		if (score >= '150.00') {
+		progress = 1.0
+		score = score - '150.00'
 		num.textContent = score
 		x5.parentNode.removeChild(x5);
 	}else {
-		alert('недостаточно средств! (нужно 600 для улучшения)')
+		alert('недостаточно средств! (нужно 150.00 для улучшения)')
 	}
 	
 });
@@ -108,5 +108,5 @@ backyellow2.addEventListener('click', function(){
 	backyellow.classList.remove('tab')
 
 
-});
 
+});
