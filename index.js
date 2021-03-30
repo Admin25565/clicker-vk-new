@@ -17,7 +17,7 @@ let backyellow2 = document.querySelector('.back2')
 
 //счетчик
 let score = 0.00
-let progress = 0.025
+let progress = 0.030
 
 
 click.addEventListener('click', function(){
@@ -28,7 +28,7 @@ click.addEventListener('click', function(){
 
 x2.addEventListener('click', function(){
 	if (score >= '20.00') {
-		progress = 0.055
+		progress = 0.060
 		score = score - '20.00'
 		num.textContent = score
 		x2.parentNode.removeChild(x2);
@@ -43,7 +43,7 @@ x2.addEventListener('click', function(){
 
 x3.addEventListener('click', function(){
 		if (score >= '60.00') {
-		progress = 0.080
+		progress = 0.090
 		score = score - '60.00'
 		num.textContent = score
 		x3.parentNode.removeChild(x3);
@@ -56,7 +56,7 @@ x3.addEventListener('click', function(){
 
 x4.addEventListener('click', function(){
 		if (score >= '100.00') {
-		progress = 0.55
+		progress = 1.20
 		score = score - '100.00'
 		num.textContent = score
 		x4.parentNode.removeChild(x4);
@@ -68,7 +68,7 @@ x4.addEventListener('click', function(){
 
 x5.addEventListener('click', function(){
 		if (score >= '150.00') {
-		progress = 1.0
+		progress = 1.50
 		score = score - '150.00'
 		num.textContent = score
 		x5.parentNode.removeChild(x5);
