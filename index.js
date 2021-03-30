@@ -93,3 +93,19 @@ backyellow.addEventListener('click', function(){
 
 
 });
+
+backyellow2.addEventListener('click', function(){
+	body.classList.remove('yellow')
+	line.classList.remove('color')
+	x2.classList.remove('color')
+	x3.classList.remove('color')
+	x4.classList.remove('color')
+	x5.classList.remove('color')
+	welcome.classList.remove('color')
+	num.classList.remove('color')
+	tap.classList.remove('color')
+	backyellow.classList.remove('tab')
+
+
+
+});
